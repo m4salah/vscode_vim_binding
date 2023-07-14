@@ -36,5 +36,10 @@
 		"key": "ctrl+shift+n",
 		"command": "explorer.newFolder",
 		"when": "explorerViewletFocus"
-	}
+	},
+	{
+		"key": "shift+t",
+		"command": "workbench.action.toggleSidebarVisibility",
+		"when": "explorerViewletFocus"
+	},
 ]

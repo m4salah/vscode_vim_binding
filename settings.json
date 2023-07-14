@@ -1,14 +1,21 @@
 {
-	"file.formatOnSave": true,
-	"explorer.confirmDelete": false,
-	"editor.inlineSuggest.enabled": true,
-	"editor.formatOnSave": true,
-	"files.eol": "\n",
-	"git.confirmSync": false,
+	"editor.fontFamily": "JetBrains Mono",
+	"editor.fontLigatures": true,
+	"workbench.iconTheme": "vscode-great-icons",
+	"editor.fontSize": 14,
+	"editor.tabSize": 4,
+	"terminal.integrated.fontFamily": "jetBrains Mono",
+	"editor.suggestSelection": "first",
+	"editor.renderWhitespace": "all",
+	"workbench.colorTheme": "One Dark Pro Darker",
+	"editor.guides.bracketPairs": true,
+	"editor.bracketPairColorization.enabled": true,
+	"go.toolsManagement.autoUpdate": true,
+	"editor.unicodeHighlight.ambiguousCharacters": false,
 	"editor.lineNumbers": "relative",
-	// Vim settings
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	// Vim Config
 	"vim.leader": ",",
-	"vim.useSystemClipboard": true,
 	"vim.insertModeKeyBindings": [
 		{
 			"before": [
@@ -23,18 +30,27 @@
 	"vim.normalModeKeyBindingsNonRecursive": [
 		{
 			"before": [
-				"L"
+				"leader",
+				"f"
 			],
-			"after": [
-				"$"
+			"commands": [
+				"workbench.action.quickOpen"
 			]
 		},
 		{
 			"before": [
-				"H"
+				"<S-h>"
 			],
-			"after": [
-				"^"
+			"commands": [
+				":bprevious"
+			]
+		},
+		{
+			"before": [
+				"<S-l>"
+			],
+			"commands": [
+				":bnext"
 			]
 		},
 		{
@@ -73,16 +89,7 @@
 			],
 			"commands": [
 				"workbench.explorer.fileView.focus"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"t"
 			],
-			"commands": [
-				"revealInExplorer"
-			]
 		},
 		{
 			"before": [
@@ -160,7 +167,7 @@
 			"commands": [
 				"editor.action.commentLine"
 			]
-		}
+		},
 	],
 	"vim.visualModeKeyBindings": [
 		// Stay in visual mode while indenting
@@ -207,5 +214,16 @@
 				"editor.action.commentLine"
 			]
 		}
-	]
+	],
+	"security.workspace.trust.untrustedFiles": "open",
+	"explorer.confirmDelete": false,
+	"vim.useSystemClipboard": true,
+	"editor.inlineSuggest.enabled": true,
+	"editor.formatOnSave": true,
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"files.eol": "\n",
+	"git.confirmSync": false,
+	"editor.minimap.enabled": false
 }
