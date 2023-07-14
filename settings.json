@@ -1,0 +1,211 @@
+{
+	"file.formatOnSave": true,
+	"explorer.confirmDelete": false,
+	"editor.inlineSuggest.enabled": true,
+	"editor.formatOnSave": true,
+	"files.eol": "\n",
+	"git.confirmSync": false,
+	"editor.lineNumbers": "relative",
+	// Vim settings
+	"vim.leader": ",",
+	"vim.useSystemClipboard": true,
+	"vim.insertModeKeyBindings": [
+		{
+			"before": [
+				"j",
+				"j"
+			],
+			"after": [
+				"<Esc>"
+			]
+		}
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"L"
+			],
+			"after": [
+				"$"
+			]
+		},
+		{
+			"before": [
+				"H"
+			],
+			"after": [
+				"^"
+			]
+		},
+		{
+			"before": [
+				"leader",
+				"w"
+			],
+			"commands": [
+				"workbench.action.files.save"
+			]
+		},
+		{
+			"before": [
+				"leader",
+				"a",
+				"w"
+			],
+			"commands": [
+				"workbench.action.files.saveAll"
+			]
+		},
+		{
+			"before": [
+				"leader",
+				"/"
+			],
+			"commands": [
+				"actions.find"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"n",
+				"e"
+			],
+			"commands": [
+				"workbench.explorer.fileView.focus"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"t"
+			],
+			"commands": [
+				"revealInExplorer"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"p"
+			],
+			"commands": [
+				"workbench.action.quickOpen"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"q"
+			],
+			"commands": [
+				"workbench.action.closeActiveEditor"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"v"
+			],
+			"commands": [
+				":vsplit"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"s"
+			],
+			"commands": [
+				":split"
+			]
+		},
+		{
+			"before": [
+				"ctrl+l"
+			],
+			"commands": [
+				"workbench.action.focusRightGroup"
+			]
+		},
+		{
+			"before": [
+				"ctrl+h"
+			],
+			"commands": [
+				"workbench.action.focusLeftGroup"
+			]
+		},
+		{
+			"before": [
+				"ctrl+k"
+			],
+			"commands": [
+				"workbench.action.focusAboveGroup"
+			]
+		},
+		{
+			"before": [
+				"ctrl+j"
+			],
+			"commands": [
+				"workbench.action.focusBelowGroup"
+			]
+		},
+		{
+			"before": [
+				"leader",
+				"c"
+			],
+			"commands": [
+				"editor.action.commentLine"
+			]
+		}
+	],
+	"vim.visualModeKeyBindings": [
+		// Stay in visual mode while indenting
+		{
+			"before": [
+				"<"
+			],
+			"commands": [
+				"editor.action.outdentLines"
+			]
+		},
+		{
+			"before": [
+				">"
+			],
+			"commands": [
+				"editor.action.indentLines"
+			]
+		},
+		// Move selected lines while staying in visual mode
+		{
+			"before": [
+				"J"
+			],
+			"commands": [
+				"editor.action.moveLinesDownAction"
+			]
+		},
+		{
+			"before": [
+				"K"
+			],
+			"commands": [
+				"editor.action.moveLinesUpAction"
+			]
+		},
+		// toggle comment selection
+		{
+			"before": [
+				"leader",
+				"c"
+			],
+			"commands": [
+				"editor.action.commentLine"
+			]
+		}
+	]
+}
