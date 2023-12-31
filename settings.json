@@ -85,6 +85,10 @@
       "commands": ["workbench.action.closeActiveEditor"]
     },
     {
+      "before": ["<leader>", "a", "q"],
+      "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
       "before": ["<leader>", "v"],
       "commands": [":vsplit"]
     },
@@ -111,7 +115,15 @@
     {
       "before": ["leader", "c"],
       "commands": ["editor.action.commentLine"]
-    }
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
   ],
 	"vim.visualModeKeyBindings": [
 		// Stay in visual mode while indenting
